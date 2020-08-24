@@ -21,6 +21,13 @@ namespace OperatorsExercise
 
             Console.WriteLine($"The radius of this cirlce is {Radius} and has an area of {areaOfCirc}cm^2");
 
+            Console.WriteLine("Ok now lets convert celcius to fahrenheit. Give me a value of Celcius to convert");
+
+            Double Celcius;
+            var c = double.TryParse(Console.ReadLine(), out Celcius);
+            var celciusToFar = CelciusToFar(Celcius);
+            Console.WriteLine($"Ok so the value of celcius you gave was {Celcius} and that changes to {celciusToFar} in terms of fahrenheit.");
+
 
 
 
@@ -46,6 +53,11 @@ namespace OperatorsExercise
         {
             return Math.PI * (rad * rad);
         }
+        public static double CelciusToFar(double c)
+        {
+            return ((c / 5) * 9) + 32;
+        }
+       
     }
     }
 
