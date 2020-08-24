@@ -13,13 +13,13 @@ namespace OperatorsExercise
             var mod = a % b;
             Console.WriteLine($"{a}/{b} is {div} with a remainder of {mod}");
 
-            Console.WriteLine("Give the radius of a cirlce please");
+            Console.WriteLine("Give the radius of a cirlce in cm, please");
 
             double Radius;
             var rad = double.TryParse(Console.ReadLine(), out Radius);
             var areaOfCirc = CalculateAreaCirc(Radius);
 
-            Console.WriteLine($"The radius of this cirlce is {Radius} and has an area of {areaOfCirc}");
+            Console.WriteLine($"The radius of this cirlce is {Radius} and has an area of {areaOfCirc}cm^2");
 
 
 
